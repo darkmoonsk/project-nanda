@@ -11,7 +11,7 @@ function Header() {
         >
             <img
                 className="w-96 rounded-3xl opacity-60 drop-shadow-xl"
-                src="/src/assets/logo.png"
+                src="./logo.png"
                 alt="logo"
             />
             <Menu />
