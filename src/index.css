@@ -30,4 +30,8 @@ h1 {
     line-height: 1.1;
 }
 
+.text-shadow {
+    text-shadow: 2px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
 

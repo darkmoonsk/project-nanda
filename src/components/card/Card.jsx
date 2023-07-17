@@ -1,41 +1,48 @@
 import PropTypes from 'prop-types';
 
 export default function Card(props) {
+    const { imageSize, url, title, description, reverse } = props;
+    const order1 = reverse ? "order-1" : "";
+    const order2 = reverse ? "order-2" : "";
+
   return (
-    <div className={`
-        p-4
-        flex gap-9 max-md:flex-col max-md:items-center
+    <section className={`
+        p-8 mb-10
+        flex gap-9 max-xl:flex-col max-xl:items-center
         shadow-[rgb(0,0,0,0.2)] shadow-2xl
     `}>
         <img 
-            src={props.url} 
+            src={url} 
             className={`
                 rounded-lg shadow-[rgb(0,0,0,0.8)] shadow-lg
-                max-w-[256px]
+                ${imageSize} flex-shrink-0 ${order2}
             `}
         />
         <div className={`
-            flex flex-col max-md:items-center
+            flex flex-col max-xl:items-center ${order1}
+            text-rosa-escuro
         `}>
             <h1 className={`
-                mb-4
-                font-black text-rosa-escuro
-            `}>{props.title}</h1>
-            {props.description.map((text, i) => (
+                mb-6
+                font-black 
+            `}>{title}</h1>
+
+            {description.map((text, i) => (
                 <p key={i} className={`
-                    mb-4 
-                    text-xl text-rosa-escuro
-                    max-md:text-center
-                `}
-                >{text}</p>
+                    mb-6 
+                    text-2xl
+                `}>{text}</p>
             ))}
         </div>
-    </div>
+    </section>
   )
 }
 
 Card.propTypes = {
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    description: PropTypes.array.isRequired,
+    imageSize: PropTypes.string.isRequired,
+    description: PropTypes.arrayOf(PropTypes.string).isRequired,
+    extras: PropTypes.element,
+    reverse: PropTypes.bool
 }
