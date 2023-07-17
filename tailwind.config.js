@@ -11,11 +11,8 @@ export default {
             "pele": "#ECCCB2",
             "pele-escuro": "#DEB6AB",
             "rosa-medio": "#AC7088",
-            "azul": "#000080"
+            "rosa-escuro": "#754d5d"
         },
-        dropShadow: {
-            "custom": "box-shadow: 0px 12px 31px 0px rgba(0,0,0,0.75)"
-        }
     },
   },
   plugins: [],
