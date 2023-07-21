@@ -24,13 +24,13 @@ export default function Card(props) {
         `}>
             <h1 className={`
                 mb-6
-                font-black 
+                font-black max-md:text-2xl
             `}>{title}</h1>
 
             {description.map((text, i) => (
                 <p key={i} className={`
                     mb-6 
-                    text-2xl
+                    text-xl
                 `}>{text}</p>
             ))}
         </div>

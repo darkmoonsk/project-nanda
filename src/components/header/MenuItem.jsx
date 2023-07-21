@@ -5,9 +5,10 @@ function MenuItem(props) {
 
     return (
         <li className={`
-        font-bold text-2xl
-        transition-all duration-200
-        hover:border-b-4 hover:border-rosa-medio     
+            font-bold text-2xl cursor-pointer
+            transition-all duration-300
+            border-b-4 border-transparent
+        hover:border-rosa-medio     
         `}>
         <Link to={`${props.url}`}>
             {props.children}
