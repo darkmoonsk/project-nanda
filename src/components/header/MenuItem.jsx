@@ -1,17 +1,17 @@
 import PropTypes from "prop-types"
+import { Link } from "react-router-dom";
 
 function MenuItem(props) {
 
     return (
-        <li>
-        <a href={props.url} className="
-            font-bold text-2xl
-            transition-all duration-200
-            hover:border-b-4 hover:border-rosa-medio     
-        "
-        >
-        {props.children}
-        </a>
+        <li className={`
+        font-bold text-2xl
+        transition-all duration-200
+        hover:border-b-4 hover:border-rosa-medio     
+        `}>
+        <Link to={`${props.url}`}>
+            {props.children}
+        </Link>
         </li>
     )
 }
