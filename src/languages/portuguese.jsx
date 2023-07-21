@@ -16,4 +16,19 @@ export default {
         ],
         extras: <Langs />
     },
+    slide: {
+        portuguese: {
+            title: "Aprenda Português",
+            slogan: "Desbloqueie um novo mundo de culturas vibrantes e oportunidades incríveis - Aprenda hoje!"
+        },
+        german: {
+            title: "Aprenda Alemão",
+            slogan: "Desvende os segredos do coração da Europa - aprenda alemão e abra portas para novas aventuras!"
+        },
+        spanish: {
+            title: "Aprenda Espanhol",
+            slogan: "Conecte-se com milhões de pessoas ao redor do mundo - fale a língua do amor, aprenda espanhol hoje!"
+        },
+    
+    }
 }   
