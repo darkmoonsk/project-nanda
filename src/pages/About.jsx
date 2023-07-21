@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
 import MainContainer from "../components/layout/MainContainer";
 import PageContainer from "../components/layout/PageContainer";
-import portuguese from "../languages/portuguese";
 import Header from "../components/header/Header";
 import Card from "../components/card/Card";
 import Banner from "../components/banner/Banner";
 
 export default function About() {
-    const [ currentLanguage, setCurrentLanguage ] = useState(portuguese);
+    const { currentLanguage } = useContext(LanguageContext);
 
     return (
         <PageContainer>
