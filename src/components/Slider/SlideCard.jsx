@@ -25,7 +25,7 @@ export default function SlideCard(props) {
         >
             <h2 className={`
                 text-center
-                text-7xl max-md:text-4xl mb-20 max-md:mb-10 text-rosa-escuro font-black
+                text-7xl max-md:text-3xl mb-20 max-md:mb-10 text-rosa-escuro font-black
             `}
             style={{
                 textShadow: "5px 2px 4px #FFF9"
