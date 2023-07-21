@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useContext } from "react"
 import PropTypes from "prop-types"
-import portuguese from "../../languages/portuguese"
+import { LanguageContext } from "../../contexts/LanguageContext"
 
 export default function SlideCard(props) {
-    const [ currentLanguage, setCurrentLanguage ] = useState(portuguese);
+    const {currentLanguage} = useContext(LanguageContext);
     const url = props.url
 
   return (
