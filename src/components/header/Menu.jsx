@@ -9,7 +9,7 @@ function Menu() {
             <ul className="flex gap-5">
                 <MenuItem url="/">{currentLanguage.navbar.home}</MenuItem>
                 <MenuItem url="/about">{currentLanguage.navbar.about}</MenuItem>
-                <MenuItem url="#">{currentLanguage.navbar.contact}</MenuItem>
+                <MenuItem url="/contact">{currentLanguage.navbar.contact}</MenuItem>
             </ul>
         </nav>
     );

@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import App from "./App";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import Contact from "./pages/Contact";
 
 const route = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const route = createBrowserRouter([
             {
                 path: "/about",
                 element: <About />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
             }
         ]
     }
