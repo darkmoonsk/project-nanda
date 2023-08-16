@@ -9,7 +9,7 @@ function ContactForm() {
             text-4xl font-black mb-5
         ">Contato</h2>
         <form className="
-            w-[40rem] h-min[35.625rem] rounded-xl shadow-lg p-12
+            w-full max-w-[40rem] h-min[35.625rem] rounded-xl shadow-lg p-12
             flex flex-col items-center gap-4
         ">
             <label className="
