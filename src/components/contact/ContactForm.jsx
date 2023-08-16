@@ -33,7 +33,7 @@ function ContactForm() {
                 font-black text-lg
             ">Mensagem:</label>
             <textarea className="
-                w-full h-72 p-4 r7esize-none text-white 
+                w-full h-72 p-4 resize-none text-white 
                 bg-black/20 outline-none drop-shadow-lg 
             "></textarea>
             <button className="
