@@ -8,7 +8,7 @@ import App from "./App";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Contact from "./pages/Contact";
 import EmailSent from "./pages/EmailSent";
-import EmailError from "./pages/emailError";
+import EmailError from "./pages/EmailError";
 
 const route = createBrowserRouter([
     {
