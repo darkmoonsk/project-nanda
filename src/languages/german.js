@@ -42,6 +42,28 @@ export default {
             slogan: "Vernetzen Sie sich mit Millionen von Menschen auf der ganzen Welt - sprechen Sie die Sprache der Liebe, lernen Sie heute Spanisch!"
         },
     
-    }
+    },
+    contactForm: {
+        title: "Kontakt",
+        name: "Name",
+        email: "E-Mail",
+        phone: "Handynummer",
+        type: "Typ",
+        personType: {
+            natural: "Natürliche Person",
+            legal: "Juristische Person"
+        },
+        language: "Interessierte Sprache",
+        message: "Nachricht",
+        send: "Senden",
+    },
+    emailSent: {
+        title: "Nachricht erfolgreich gesendet!",
+        description: "Vielen Dank für Ihre Kontaktaufnahme. Ich werde mich bald bei Ihnen melden.",
+    },
+    emailError: {
+        title: "Fehler beim Senden der Nachricht",
+        description: "Bitte versuchen Sie es später erneut.",
+    }        
 }
 

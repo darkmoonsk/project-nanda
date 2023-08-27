@@ -42,6 +42,28 @@ export default {
             slogan: "Conéctate con millones de personas en todo el mundo - habla el idioma del amor, ¡aprende español hoy!"
         },
     
-    }
+    },
+    contactForm: {
+        title: "Contacto",
+        name: "Nombre",
+        email: "Correo electrónico",
+        phone: "Teléfono móvil",
+        type: "Tipo",
+        personType: {
+            natural: "Persona física",
+            legal: "Persona jurídica"
+        },
+        language: "Idioma de interés",
+        message: "Mensaje",
+        send: "Enviar",
+    },
+    emailSent: {
+        title: "¡Mensaje enviado exitosamente!",
+        description: "Gracias por su contacto. Pronto me pondré en contacto con usted.",
+    },
+    emailError: {
+        title: "Error al enviar el mensaje",
+        description: "Por favor, inténtelo nuevamente más tarde.",
+    }        
 }
 
