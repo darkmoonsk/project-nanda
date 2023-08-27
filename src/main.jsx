@@ -7,6 +7,8 @@ import About from "./pages/About";
 import App from "./App";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Contact from "./pages/Contact";
+import EmailSent from "./pages/EmailSent";
+import EmailError from "./pages/emailError";
 
 const route = createBrowserRouter([
     {
@@ -24,6 +26,14 @@ const route = createBrowserRouter([
             {
                 path: "contact",
                 element: <Contact />
+            },
+            {
+                path: "emailSent",
+                element: <EmailSent />
+            },
+            {
+                path: "error",
+                element: <EmailError />
             }
         ]
     }
